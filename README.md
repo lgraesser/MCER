@@ -1,1 +1,1 @@
-# Mode Caption Epoch Repeat
+# Model Caption Epoch Repeat
