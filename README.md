@@ -7,8 +7,8 @@ The code was used to train MCER, a model which wrote the text in Michael Iveson'
 ## Setup
 
 ```
-git clone https://github.com/lgraesser/image-captioning.git
-cd image-captioning
+git clone https://github.com/lgraesser/MCER.git
+cd MCER
 conda env create -f environment.yml
 conda activate imcap
 ```
@@ -20,6 +20,15 @@ python main.py --experiment_name 'test-model' --num_training_captions 10000 --vo
 ```
 
 > **_NOTE:_**: This will download and extract the entire MSCOCO dataset which requires >15GB space.
+
+## Training MCER
+
+The command below trains a model with the same settings as MCER.
+
+```
+python main.py --experiment_name 'test-mcer-model' --num_training_captions 414113 --vocab_size 20000 --num_epochs 7 --num_repeats 20 --partial_epoch_eval True
+```
+
 
 ## Training a model inside a Docker container
 
