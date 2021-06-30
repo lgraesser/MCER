@@ -1,0 +1,14 @@
+name: imcap
+channels:
+  - anaconda
+dependencies:
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - pillow
+  - jupyter
+  - ipykernel
+  - absl-py
+  - pip
+  - pip:
+    - tensorflow>=2.3  # we need 2.3 and this is only available through pip
